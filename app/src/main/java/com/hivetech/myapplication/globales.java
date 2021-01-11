@@ -6,7 +6,6 @@ import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -16,8 +15,6 @@ public class globales {
 
     public static String DEBUG_TAG = "Depuracion";
 
-    public static ArrayList<cliente> clientes;
-    public static cliente clienteAEditar = null;
 
     public static String[] marcas = {
             "Audi",

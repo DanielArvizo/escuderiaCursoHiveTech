@@ -1,17 +1,13 @@
 package com.hivetech.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -23,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
 
     boolean permisoLlamadas, permisoMensajes;
 
-    Animation animationAlfa;
+
 
     ImageView imgSplash;
     TextView txtSplash;
@@ -37,9 +33,6 @@ public class SplashActivity extends AppCompatActivity {
 
         imgSplash = findViewById(R.id.imgSplash);
         txtSplash = findViewById(R.id.txtSplash);
-        animationAlfa = AnimationUtils.loadAnimation(this,R.anim.alpha_out);
-        imgSplash.setAnimation(animationAlfa);
-        txtSplash.setAnimation(animationAlfa);
 
         revisarPermisos();
     }
